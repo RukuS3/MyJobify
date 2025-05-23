@@ -17,7 +17,7 @@ export class MiperfilPage implements OnInit {
   editandoCorreo: boolean = false;
   editandoDireccion: boolean = false;
 
-  valoracion: number = 4.7; 
+  valoracion: number = 3.5; 
 
 
 

@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
-@Component({
-  selector: 'app-informacion',
-  templateUrl: './informacion.page.html',
-  styleUrls: ['./informacion.page.scss'],
 
+@Component({
+  selector: 'app-contactanos',
+  templateUrl: './contactanos.page.html',
+  styleUrls: ['./contactanos.page.scss'],
 })
-export class InformacionPage implements OnInit {
+export class ContactanosPage implements OnInit {
 
   constructor(private location: Location) { }
 

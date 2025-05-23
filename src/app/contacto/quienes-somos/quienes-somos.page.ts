@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-informacion',
-  templateUrl: './informacion.page.html',
-  styleUrls: ['./informacion.page.scss'],
-
+  selector: 'app-quienes-somos',
+  templateUrl: './quienes-somos.page.html',
+  styleUrls: ['./quienes-somos.page.scss'],
 })
-export class InformacionPage implements OnInit {
+export class QuienesSomosPage implements OnInit {
 
   constructor(private location: Location) { }
 
@@ -17,5 +16,4 @@ export class InformacionPage implements OnInit {
   goBack() {
     this.location.back();
   }
-
 }

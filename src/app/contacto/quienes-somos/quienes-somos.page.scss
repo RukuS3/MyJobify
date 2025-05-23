@@ -180,3 +180,32 @@ ion-button.login-button.centrado {
     color: #b30000;
   }
 }
+
+.quienes-somos-content {
+  --background: #fff;
+
+  .quienes-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .quienes-titulo {
+    color: #8b0000;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #b30000;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+
+  .quienes-texto {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 18px;
+  }
+}

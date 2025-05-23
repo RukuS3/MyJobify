@@ -117,51 +117,69 @@
       }
     }
   }
- 
 
-.button-center-content {
+  
+.custom-header .logo {
+  color: #8B0000;
+  font-weight: bold;
+}
+
+
+.notification-icon {
+  margin-left: auto;
+}
+
+.add-icon-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* Compensa el header y footer con altura reducida */
-  height: calc(100vh - 112px); /* Ajusta según tu header/footer (56px cada uno aprox) */
+  margin: 16px 0;
 }
 
-.login-button {
-  background: linear-gradient(to right, #ff8a8a, #8b0000); 
-  color: white;
-  font-weight: bold;
-  border-radius: 20px;
-  margin: 10px auto;
-  padding: 8px 20px;
-  font-size: 1rem;
-  width: auto; /* cambia de 100% a auto para hacerlo más pequeño */
-  min-width: 180px;
-} 
-
-.login-button.personalizado {
-  width: auto;             /* Quita el ancho total */
-  min-width: 200px;        /* Tamaño mínimo */
-  margin: 20px auto;       /* Centra horizontalmente */
-  display: block;          /* Necesario para que margin:auto funcione */
+.add-icon {
+  font-size: 40px;
+  color: #999;
 }
 
-ion-button.login-button.centrado {
-  display: block !important;
-  margin: 20px auto !important;
-  width: auto !important;
-  min-width: 120px;   /* antes: 180px */
-  max-width: 160px;   /* antes: 220px */
-  padding: 6px 12px;  /* antes: 10px 20px */
-  font-size: 0.9rem;  /* un poco más pequeño */
-  text-align: center;
+.region-comuna {
+  margin-top: 16px;
+  padding-left: 8px;
 }
 
-.button-group {
+.btn-publicar-container {
+  margin-top: 24px;
+}
+
+.btn-publicar {
+  background: linear-gradient(to right, #e52e71, #ff5864);
+  border-radius: 8px;
+}
+
+
+
+.crear-publicacion {
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 10px 0;
 }
 
+.foto-publicacion-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.foto-publicacion {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 .notification-button {
   position: absolute;

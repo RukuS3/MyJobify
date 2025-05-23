@@ -43,6 +43,26 @@ const routes: Routes = [
     path: 'crear-publicacion',
     loadChildren: () => import('./seguridad/crear-publicacion/crear-publicacion.module').then( m => m.CrearPublicacionPageModule)
   },
+  {
+    path: 'add-publicacion',
+    loadChildren: () => import('./seguridad/add-publicacion/add-publicacion.module').then( m => m.AddPublicacionPageModule)
+  },
+  {
+    path: 'contactanos',
+    loadChildren: () => import('./contacto/contactanos/contactanos.module').then( m => m.ContactanosPageModule)
+  },
+  {
+    path: 'terminos-condiciones',
+    loadChildren: () => import('./contacto/terminos-condiciones/terminos-condiciones.module').then( m => m.TerminosCondicionesPageModule)
+  },
+  {
+    path: 'privacidad-terminos',
+    loadChildren: () => import('./contacto/privacidad-terminos/privacidad-terminos.module').then( m => m.PrivacidadTerminosPageModule)
+  },
+  {
+    path: 'quienes-somos',
+    loadChildren: () => import('./contacto/quienes-somos/quienes-somos.module').then( m => m.QuienesSomosPageModule)
+  },
 
 ];
 
