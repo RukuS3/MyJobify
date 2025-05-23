@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'informacion',
     loadChildren: () => import('./seguridad/informacion/informacion.module').then( m => m.InformacionPageModule)
   },
+  {
+    path: 'crear-publicacion',
+    loadChildren: () => import('./seguridad/crear-publicacion/crear-publicacion.module').then( m => m.CrearPublicacionPageModule)
+  },
 
 ];
 
