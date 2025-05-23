@@ -35,7 +35,11 @@ const routes: Routes = [
   {
     path: 'miperfil',
     loadChildren: () => import('./seguridad/miperfil/miperfil.module').then( m => m.MiperfilPageModule)
+  },  {
+    path: 'informacion',
+    loadChildren: () => import('./seguridad/informacion/informacion.module').then( m => m.InformacionPageModule)
   },
+
 ];
 
 @NgModule({
