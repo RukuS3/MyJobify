@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-publicacion',
@@ -10,11 +11,14 @@ export class AddPublicacionPage implements OnInit {
 
   fotoPublicacion: string = 'https://placehold.co/200x200?text=Agregar+foto';
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit() {
   }
 
+  goBack() {
+    this.location.back();
+  }
 
 
   seleccionarImagen() {

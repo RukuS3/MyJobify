@@ -119,10 +119,6 @@
   }
 
   
-.custom-header .logo {
-  color: #8B0000;
-  font-weight: bold;
-}
 
 
 .notification-icon {
@@ -160,9 +156,11 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  color: #b30000;
   font-weight: 500;
   font-size: 16px;
   margin: 10px 0;
+  margin-left: 30px; 
 }
 
 .foto-publicacion-container {
