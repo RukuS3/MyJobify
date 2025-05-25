@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-detalle-publicacion',
-  templateUrl: './detalle-publicacion.page.html',
-  styleUrls: ['./detalle-publicacion.page.scss'],
+    selector: 'app-detalle-publicacion',
+    templateUrl: './detalle-publicacion.page.html',
+    styleUrls: ['./detalle-publicacion.page.scss'],
+    standalone: false
 })
 export class DetallePublicacionPage {
   publicacion = {

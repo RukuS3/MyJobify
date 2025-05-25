@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-informacion',
-  templateUrl: './informacion.page.html',
-  styleUrls: ['./informacion.page.scss'],
-
+    selector: 'app-informacion',
+    templateUrl: './informacion.page.html',
+    styleUrls: ['./informacion.page.scss'],
+    standalone: false
 })
 export class InformacionPage implements OnInit {
 
