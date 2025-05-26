@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-privacidad-terminos',
-  templateUrl: './privacidad-terminos.page.html',
-  styleUrls: ['./privacidad-terminos.page.scss'],
+    selector: 'app-privacidad-terminos',
+    templateUrl: './privacidad-terminos.page.html',
+    styleUrls: ['./privacidad-terminos.page.scss'],
+    standalone: false
 })
 export class PrivacidadTerminosPage implements OnInit {
 

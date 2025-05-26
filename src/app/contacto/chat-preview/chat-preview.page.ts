@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-chat-preview',
-  templateUrl: './chat-preview.page.html',
-  styleUrls: ['./chat-preview.page.scss'],
-  encapsulation: ViewEncapsulation.None 
+    selector: 'app-chat-preview',
+    templateUrl: './chat-preview.page.html',
+    styleUrls: ['./chat-preview.page.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class ChatPreviewPage {
   chats = [

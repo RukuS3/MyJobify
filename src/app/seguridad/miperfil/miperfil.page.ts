@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 
 @Component({
-  selector: 'app-miperfil',
-  templateUrl: './miperfil.page.html',
-  styleUrls: ['./miperfil.page.scss'],
+    selector: 'app-miperfil',
+    templateUrl: './miperfil.page.html',
+    styleUrls: ['./miperfil.page.scss'],
+    standalone: false
 })
 export class MiperfilPage implements OnInit {
   telefono: string = '+56 987654321';

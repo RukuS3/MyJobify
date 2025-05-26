@@ -17,27 +17,20 @@
 </ion-header>
 
 
-<ion-content class="inicio-content">
-  <div class="inicio-container">
-    <div class="search-bar">
-      <ion-icon name="search" class="search-icon"></ion-icon>
-      <input type="text" placeholder="Buscar">
-    </div>
+<ion-content>
+  <ion-list *ngIf="publicaciones.length > 0; else sinDatos">
+    <ion-item *ngFor="let pub of publicaciones">
+      <ion-label>
+        <h2>{{ pub.titulo }}</h2>
+        <p>{{ pub.descripcion }}</p>
+        <p><small>Publicado por: {{ pub.usuarioEmail }}</small></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
-    <!-- Cards de publicaciones -->
-    <div class="card" *ngFor="let item of publicaciones">
-      <div class="card-left">
-        <h3>{{ item.titulo }}</h3>
-        <div class="rating">
-          <ion-icon name="star" color="warning"></ion-icon>
-          <span>{{ item.rating }}</span>
-        </div>
-      </div>
-      <div class="card-right">
-        <img [src]="item.imagen" alt="imagen">
-      </div>
-    </div>
-  </div>
+  <ng-template #sinDatos>
+    <ion-text color="medium" class="ion-padding">No hay publicaciones disponibles.</ion-text>
+  </ng-template>
 </ion-content>
 
 <ion-footer>

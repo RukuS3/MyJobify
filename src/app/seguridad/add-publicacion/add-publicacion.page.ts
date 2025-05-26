@@ -5,9 +5,10 @@ import { Router } from '@angular/router';
 import { FirebaseService } from '../../services/firebase.service';
 
 @Component({
-  selector: 'app-add-publicacion',
-  templateUrl: './add-publicacion.page.html',
-  styleUrls: ['./add-publicacion.page.scss'],
+    selector: 'app-add-publicacion',
+    templateUrl: './add-publicacion.page.html',
+    styleUrls: ['./add-publicacion.page.scss'],
+    standalone: false
 })
 export class AddPublicacionPage implements OnInit {
 
