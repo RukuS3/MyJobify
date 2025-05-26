@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'quienes-somos',
     loadChildren: () => import('./contacto/quienes-somos/quienes-somos.module').then( m => m.QuienesSomosPageModule)
   },
+  {
+    path: 'edit-publicacion',
+    loadChildren: () => import('./seguridad/edit-publicacion/edit-publicacion.module').then( m => m.EditPublicacionPageModule)
+  },
 
 ];
 
